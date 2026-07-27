@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Relay Cyber Café — Gaming, Printing &amp; Internet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="top">
+  <div class="header-inner">
+    <a href="#top" class="logo">
+      <span class="logo-mark">R</span>
+      <span class="logo-text">RELAY<span class="logo-sub">CYBER CAFÉ</span></span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#services">Services</a>
+      <a href="#specs">PCs</a>
+      <a href="#prices">Rates</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#hours">Hours &amp; Map</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-right">
+      <span class="status-pill" id="statusPill">
+        <span class="status-dot"></span>
+        <span id="statusText">Checking hours…</span>
+      </span>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow">Walk in or reserve ahead</p>
+      <h1>Get online, get gaming, get it printed.</h1>
+      <p class="hero-sub">Fifteen desks, six gaming rigs, one busy printer. Relay is the neighborhood spot for fast internet, LAN gaming, and same-day printing — no appointment needed.</p>
+      <div class="hero-actions">
+        <a href="#prices" class="btn btn-primary">See today's rates</a>
+        <a href="#hours" class="btn btn-ghost">Get directions</a>
+      </div>
+      <ul class="hero-stats">
+        <li><strong>15</strong><span>Internet desks</span></li>
+        <li><strong>6</strong><span>Gaming rigs</span></li>
+        <li><strong>₹10</strong><span>Prints from</span></li>
+      </ul>
+    </div>
+
+    <div class="hero-ticket" aria-hidden="false">
+      <div class="ticket">
+        <div class="ticket-row ticket-head">
+          <span>SESSION PASS</span>
+          <span>NO. 004</span>
+        </div>
+        <div class="ticket-divider"></div>
+        <div class="ticket-body">
+          <p class="ticket-label">Admit one</p>
+          <p class="ticket-big">RELAY</p>
+          <p class="ticket-sub">Cyber Café · Internet &amp; Gaming</p>
+          <div class="ticket-line"><span>Date</span><span id="ticketDate">—</span></div>
+          <div class="ticket-line"><span>Time</span><span id="ticketTime">—</span></div>
+          <div class="ticket-line"><span>Status</span><span id="ticketStatus">—</span></div>
+        </div>
+        <div class="ticket-divider"></div>
+        <div class="ticket-barcode" aria-hidden="true"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="section" id="services">
+  <div class="section-inner">
+    <p class="eyebrow">What we offer</p>
+    <h2>Services at the counter</h2>
+    <div class="ticket-grid">
+
+      <article class="svc-ticket">
+        <div class="svc-ticket-top"><span>NO. 01</span><span>GAMING</span></div>
+        <h3>Gaming</h3>
+        <p>Six rigs running the latest competitive titles, wired for the lowest ping in the neighborhood. Bring a friend or join a stranger's squad.</p>
+        <a href="#prices" class="svc-link">Rates from ₹40/hr →</a>
+      </article>
+
+      <article class="svc-ticket">
+        <div class="svc-ticket-top"><span>NO. 02</span><span>PRINTING</span></div>
+        <h3>Printing</h3>
+        <p>Colour and black &amp; white, single or double-sided, any size from A4 to A3. Bring a USB drive or email us the file.</p>
+        <a href="#prices" class="svc-link">Rates from ₹5/page →</a>
+      </article>
+
+      <article class="svc-ticket">
+        <div class="svc-ticket-top"><span>NO. 03</span><span>SCANNING</span></div>
+        <h3>Scanning</h3>
+        <p>Documents, photos, and certificates scanned and emailed to you in minutes. High-resolution scans for forms and applications.</p>
+        <a href="#prices" class="svc-link">Rates from ₹10/page →</a>
+      </article>
+
+      <article class="svc-ticket">
+        <div class="svc-ticket-top"><span>NO. 04</span><span>PHOTOCOPY</span></div>
+        <h3>Photocopying</h3>
+        <p>Fast photocopies while you wait. Bulk discounts for 50+ pages — handy for coursework and office documents.</p>
+        <a href="#prices" class="svc-link">Rates from ₹2/page →</a>
+      </article>
+
+      <article class="svc-ticket">
+        <div class="svc-ticket-top"><span>NO. 05</span><span>INTERNET</span></div>
+        <h3>Internet browsing</h3>
+        <p>Fibre connection across every desk. Book online, fill forms, check email, or just browse — billed by the minute.</p>
+        <a href="#prices" class="svc-link">Rates from ₹1/min →</a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ PC SPECS ============ -->
+<section class="section section-alt" id="specs">
+  <div class="section-inner">
+    <p class="eyebrow">Hardware on the floor</p>
+    <h2>What's under the hood</h2>
+    <div class="spec-grid">
+
+      <div class="spec-card">
+        <div class="spec-card-head">
+          <h3>Gaming Rig</h3>
+          <span class="spec-tag">6 units</span>
+        </div>
+        <dl class="spec-list">
+          <div><dt>CPU</dt><dd>Ryzen 5 5600X</dd></div>
+          <div><dt>GPU</dt><dd>RTX 4060, 8GB</dd></div>
+          <div><dt>RAM</dt><dd>16GB DDR4</dd></div>
+          <div><dt>Storage</dt><dd>512GB NVMe SSD</dd></div>
+          <div><dt>Display</dt><dd>24" 144Hz</dd></div>
+          <div><dt>Peripherals</dt><dd>Mechanical keyboard, wired mouse, headset</dd></div>
+        </dl>
+      </div>
+
+      <div class="spec-card">
+        <div class="spec-card-head">
+          <h3>Work Station</h3>
+          <span class="spec-tag">7 units</span>
+        </div>
+        <dl class="spec-list">
+          <div><dt>CPU</dt><dd>Core i5, 11th gen</dd></div>
+          <div><dt>GPU</dt><dd>Integrated graphics</dd></div>
+          <div><dt>RAM</dt><dd>8GB DDR4</dd></div>
+          <div><dt>Storage</dt><dd>256GB SSD</dd></div>
+          <div><dt>Display</dt><dd>21.5" Full HD</dd></div>
+          <div><dt>Software</dt><dd>MS Office, browsers, PDF tools</dd></div>
+        </dl>
+      </div>
+
+      <div class="spec-card">
+        <div class="spec-card-head">
+          <h3>Browse &amp; Print</h3>
+          <span class="spec-tag">2 units</span>
+        </div>
+        <dl class="spec-list">
+          <div><dt>CPU</dt><dd>Core i3, 10th gen</dd></div>
+          <div><dt>RAM</dt><dd>8GB DDR4</dd></div>
+          <div><dt>Storage</dt><dd>256GB SSD</dd></div>
+          <div><dt>Display</dt><dd>19.5" HD</dd></div>
+          <div><dt>Connected to</dt><dd>Colour laser printer &amp; flatbed scanner</dd></div>
+          <div><dt>Best for</dt><dd>Quick prints, scans, forms</dd></div>
+        </dl>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRICE LIST ============ -->
+<section class="section" id="prices">
+  <div class="section-inner">
+    <p class="eyebrow">No surprises at checkout</p>
+    <h2>Today's rates</h2>
+
+    <div class="receipt">
+      <div class="receipt-head">
+        <p>RELAY CYBER CAFÉ</p>
+        <p>RATE CARD · VALID TODAY</p>
+      </div>
+      <div class="receipt-divider"></div>
+
+      <div class="receipt-section">
+        <p class="receipt-section-title">Internet &amp; gaming</p>
+        <div class="receipt-row"><span>Internet browsing</span><span class="fill"></span><span>₹1 / min</span></div>
+        <div class="receipt-row"><span>Internet — hourly pack</span><span class="fill"></span><span>₹40 / hr</span></div>
+        <div class="receipt-row"><span>Gaming rig — standard</span><span class="fill"></span><span>₹50 / hr</span></div>
+        <div class="receipt-row"><span>Gaming rig — night pack (10pm–6am)</span><span class="fill"></span><span>₹200 / night</span></div>
+      </div>
+
+      <div class="receipt-section">
+        <p class="receipt-section-title">Printing &amp; copying</p>
+        <div class="receipt-row"><span>Print — B&amp;W, A4</span><span class="fill"></span><span>₹5 / page</span></div>
+        <div class="receipt-row"><span>Print — colour, A4</span><span class="fill"></span><span>₹15 / page</span></div>
+        <div class="receipt-row"><span>Photocopy — A4</span><span class="fill"></span><span>₹2 / page</span></div>
+        <div class="receipt-row"><span>Scan &amp; email</span><span class="fill"></span><span>₹10 / page</span></div>
+      </div>
+
+      <div class="receipt-divider"></div>
+      <div class="receipt-row receipt-note"><span>Student ID discount</span><span class="fill"></span><span>10% off</span></div>
+      <div class="receipt-row receipt-note"><span>No cover charge · pay only for what you use</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section class="section section-alt" id="gallery">
+  <div class="section-inner">
+    <p class="eyebrow">On the wall</p>
+    <h2>From the café floor</h2>
+    <div class="photo-strip">
+      <figure class="photo photo-1"><img src="https://picsum.photos/seed/relay-desks/480/360" alt="Row of internet desks" loading="lazy"><figcaption>Desk row, 8pm</figcaption></figure>
+      <figure class="photo photo-2"><img src="https://picsum.photos/seed/relay-gaming/480/360" alt="Gaming rigs lit up" loading="lazy"><figcaption>Gaming corner</figcaption></figure>
+      <figure class="photo photo-3"><img src="https://picsum.photos/seed/relay-print/480/360" alt="Printing counter" loading="lazy"><figcaption>Print counter</figcaption></figure>
+      <figure class="photo photo-4"><img src="https://picsum.photos/seed/relay-lan/480/360" alt="LAN party night" loading="lazy"><figcaption>Weekend LAN night</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOURS + MAP + CONTACT ============ -->
+<section class="section" id="hours">
+  <div class="section-inner hours-grid">
+
+    <div>
+      <p class="eyebrow">Plan your visit</p>
+      <h2>Hours &amp; location</h2>
+
+      <table class="hours-table" id="hoursTable">
+        <tbody>
+          <tr data-day="1"><td>Monday</td><td>9:00 AM – 11:00 PM</td></tr>
+          <tr data-day="2"><td>Tuesday</td><td>9:00 AM – 11:00 PM</td></tr>
+          <tr data-day="3"><td>Wednesday</td><td>9:00 AM – 11:00 PM</td></tr>
+          <tr data-day="4"><td>Thursday</td><td>9:00 AM – 11:00 PM</td></tr>
+          <tr data-day="5"><td>Friday</td><td>9:00 AM – 1:00 AM</td></tr>
+          <tr data-day="6"><td>Saturday</td><td>9:00 AM – 1:00 AM</td></tr>
+          <tr data-day="0"><td>Sunday</td><td>10:00 AM – 10:00 PM</td></tr>
+        </tbody>
+      </table>
+
+      <address class="address-block">
+        <p>12 Station Road, Lucknow, UP 226001</p>
+        <p>+91 98765 43210 · hello@relaycafe.example</p>
+      </address>
+    </div>
+
+    <div class="map-wrap">
+      <iframe
+        title="Relay Cyber Café location map"
+        src="https://www.google.com/maps?q=Station%20Road%2C%20Lucknow&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ CONTACT FORM ============ -->
+<section class="section section-alt" id="contact">
+  <div class="section-inner">
+    <p class="eyebrow">Questions before you visit?</p>
+    <h2>Send us a message</h2>
+
+    <form class="contact-form" id="contactForm" novalidate>
+      <div class="form-row">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+        <span class="field-error" id="nameError"></span>
+      </div>
+
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        <span class="field-error" id="emailError"></span>
+      </div>
+
+      <div class="form-row">
+        <label for="service">Interested in</label>
+        <select id="service" name="service">
+          <option value="general">General enquiry</option>
+          <option value="gaming">Gaming</option>
+          <option value="printing">Printing</option>
+          <option value="scanning">Scanning</option>
+          <option value="photocopy">Photocopying</option>
+          <option value="internet">Internet browsing</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="How can we help?" required></textarea>
+        <span class="field-error" id="messageError"></span>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Send message</button>
+
+      <div class="form-success" id="formSuccess" hidden>
+        <div class="mini-ticket">
+          <span>MESSAGE RECEIVED</span>
+          <span id="formTicketNo">NO. —</span>
+        </div>
+        <p>Thanks — we'll reply within one business day.</p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="logo footer-logo">
+      <span class="logo-mark">R</span>
+      <span class="logo-text">RELAY<span class="logo-sub">CYBER CAFÉ</span></span>
+    </div>
+    <nav class="footer-nav">
+      <a href="#services">Services</a>
+      <a href="#specs">PCs</a>
+      <a href="#prices">Rates</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#hours">Hours &amp; Map</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <p class="footer-note">© <span id="year"></span> Relay Cyber Café · 12 Station Road, Lucknow</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
